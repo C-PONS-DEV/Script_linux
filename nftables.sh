@@ -13,9 +13,9 @@ nft list table $matable > nftables.rules
 
 rm /etc/network/interfaces
 
-echo Quelle ip ?
+echo 'Quelle ip ?'
 read ip
-echo Quelle passerelle (gateway) ?
+echo 'Quelle passerelle (gateway) ?'
 read gateway
 
 echo source /etc/network/interfaces.d/* >> /etc/network/interfaces
