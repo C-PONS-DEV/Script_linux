@@ -2,7 +2,6 @@
 
 # PONS Clément SIO SISR 2
 
-apt-get install ifupdown
 # Sauvegarde : 
 
 echo 'Quel et le nom de votre table à sauvegarder ?'
