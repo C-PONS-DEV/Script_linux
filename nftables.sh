@@ -38,8 +38,6 @@ echo "address $ip" >> /etc/network/interfaces
 echo "gateway $gateway" >> /etc/network/interfaces
 echo "">> /etc/network/interfaces
 
-ifup $carte
-
 # 2nd interface
 echo "auto lo" >> /etc/network/interfaces
 echo "iface lo inet loopback" >> /etc/network/interfaces
@@ -49,6 +47,7 @@ echo "iface $carte2 inet static" >> /etc/network/interfaces
 echo "address $ip2" >> /etc/network/interfaces
 echo "gateway $gateway2" >> /etc/network/interfaces
 
+ifup $carte
 ifup $carte2
 
 # Application des règles au démarage :
