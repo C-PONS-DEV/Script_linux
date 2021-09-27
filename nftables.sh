@@ -29,7 +29,7 @@ echo gateway $gateway >> /etc/network/interfaces
 echo pre-up nft –f /root/nftables/iptables.rules >> /etc/network/interfaces
 
 # Redemarage 
-echo "Appuyez sur entrer pour redemarrer le système"
+echo "Configuration terminée, appuyez sur entrer pour redemarrer le système"
 
 read tmpb
 
