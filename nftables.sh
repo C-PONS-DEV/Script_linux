@@ -28,7 +28,7 @@ echo 'Nom de seconde carte réseau ?'
 read carte2
 
 #1ere interface
-echo source /etc/network/interfaces.d/* >> /etc/network/interfaces
+echo "source /etc/network/interfaces.d/*" >> /etc/network/interfaces
 echo "auto lo" >> /etc/network/interfaces
 echo "iface lo inet loopback" >> /etc/network/interfaces
 echo "allow-hotplug $carte" >> /etc/network/interfaces
@@ -36,7 +36,7 @@ echo "auto $carte" >> /etc/network/interfaces
 echo "iface $carte inet static" >> /etc/network/interfaces
 echo "address $ip" >> /etc/network/interfaces
 echo "gateway $gateway" >> /etc/network/interfaces
-echo >> /etc/network/interfaces
+echo "">> /etc/network/interfaces
 
 ifup $carte
 
@@ -48,8 +48,8 @@ echo "auto $carte2" >> /etc/network/interfaces
 echo "iface $carte2 inet static" >> /etc/network/interfaces
 echo "address $ip2" >> /etc/network/interfaces
 echo "gateway $gateway2" >> /etc/network/interfaces
-echo >> /etc/network/interfaces
-echo >> /etc/network/interfaces
+echo "">> /etc/network/interfaces
+echo "">> /etc/network/interfaces
 echo "pre-up nft –f /root/nftables/iptables.rules" >> /etc/network/interfaces
 
 ifup $carte2
