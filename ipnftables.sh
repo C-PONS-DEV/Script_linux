@@ -4,6 +4,7 @@
 
 apt-get install ifupdown
 
+clear
 # Config IP
 
 rm /etc/network/interfaces
