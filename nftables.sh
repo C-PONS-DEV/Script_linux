@@ -27,3 +27,10 @@ echo iface enp0s3 inet static >> /etc/network/interfaces
 echo address $ip >> /etc/network/interfaces
 echo gateway $gateway >> /etc/network/interfaces
 echo pre-up nft –f /root/nftables/iptables.rules
+
+# Redemarage 
+echo "Appuyez sur entrer pour redemarrer le système"
+
+read tmpb
+
+reboot
