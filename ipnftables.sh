@@ -2,9 +2,6 @@
 
 # PONS Clément SIO SISR 2
 
-apt-get install ifupdown
-
-clear
 # Config IP
 
 rm /etc/network/interfaces
@@ -41,6 +38,3 @@ echo "auto $carte2" >> /etc/network/interfaces
 echo "iface $carte2 inet static" >> /etc/network/interfaces
 echo "address $ip2" >> /etc/network/interfaces
 echo "gateway $gateway2" >> /etc/network/interfaces
-
-ifup $carte
-ifup $carte2
