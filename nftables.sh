@@ -25,7 +25,7 @@ read ip2
 echo 'Quelle passerelle (gateway) ?'
 read gateway2
 echo 'Nom de seconde carte réseau (enp0s8 majoritairement)?'
-read carte2
+read carte2`
 
 #1ere interface
 echo "source /etc/network/interfaces.d/*" >> /etc/network/interfaces
