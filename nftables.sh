@@ -4,7 +4,7 @@
 
 # Sauvegarde : 
 
-echo 'Quel et le nom de votre table ?'
+echo 'Quel et le nom de votre table à sauvegarder ?'
 read matable
 
 nft list table $matable > nftables.rules
