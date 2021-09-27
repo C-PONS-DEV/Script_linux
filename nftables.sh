@@ -19,16 +19,17 @@ echo 'Quelle passerelle (gateway) ?'
 read gateway
 
 echo source /etc/network/interfaces.d/* >> /etc/network/interfaces
-echo auto lo >> /etc/network/interfaces
-echo iface lo inet loopback >> /etc/network/interfaces
-echo allow-hotplug enp0s3 >> /etc/network/interfaces
-echo auto enp0s3 >> /etc/network/interfaces
-echo iface enp0s3 inet static >> /etc/network/interfaces
-echo address $ip >> /etc/network/interfaces
-echo gateway $gateway >> /etc/network/interfaces
-echo pre-up nft –f /root/nftables/iptables.rules >> /etc/network/interfaces
+echo "auto lo" >> /etc/network/interfaces
+echo "iface lo inet loopback" >> /etc/network/interfaces
+echo "allow-hotplug enp0s3" >> /etc/network/interfaces
+echo "auto enp0s3" >> /etc/network/interfaces
+echo "iface enp0s3 inet static" >> /etc/network/interfaces
+echo "address $ip" >> /etc/network/interfaces
+echo "gateway $gateway" >> /etc/network/interfaces
+echo >> /etc/network/interfaces
+echo "pre-up nft –f /root/nftables/iptables.rules" >> /etc/network/interfaces
 
-# Redemarage 
+# Redemarrer 
 echo "Configuration terminée, appuyez sur entrer pour redemarrer le système"
 
 read tmpb
