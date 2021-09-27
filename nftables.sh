@@ -7,7 +7,7 @@
 echo 'Quel et le nom de votre table à sauvegarder ?'
 read matable
 
-nft list table $matable > nftables.rules
+nft list table $matable > /root/nftables.rules
 
 # Application des règles au démarage :
 
