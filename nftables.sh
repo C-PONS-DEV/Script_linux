@@ -15,7 +15,7 @@ rm /etc/network/interfaces
 
 echo Quelle ip ?
 read ip
-echo Quelle Gateway ?
+echo Quelle passerelle (gateway) ?
 read gateway
 
 echo source /etc/network/interfaces.d/* >> /etc/network/interfaces
@@ -26,7 +26,7 @@ echo auto enp0s3 >> /etc/network/interfaces
 echo iface enp0s3 inet static >> /etc/network/interfaces
 echo address $ip >> /etc/network/interfaces
 echo gateway $gateway >> /etc/network/interfaces
-echo pre-up nft –f /root/nftables/iptables.rules
+echo pre-up nft –f /root/nftables/iptables.rules >> /etc/network/interfaces
 
 # Redemarage 
 echo "Appuyez sur entrer pour redemarrer le système"
