@@ -10,4 +10,4 @@ read name
 
 
 cp -r /$dosssauv /$dossdest
-tar -czvf /$dossdest'date +%Y-%m-%d'$name.tar.gz /$dosssauv
+tar -czvf /$dossdest/'date +%Y-%m-%d'$name.tar.gz /$dosssauv
