@@ -14,6 +14,4 @@ tar -czvf /$dossdest/`date +%Y-%m-%d`$name.tar.gz /$dosssauv
 
 
 cd /$dossdest/
-rm -r $docpartgae
-
 ls
