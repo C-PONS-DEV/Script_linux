@@ -1,7 +1,7 @@
-#!/bin/bash
+cp media/docpartgae /tmp
 
-# date du jour
-backupdate=$(date +%Y-%m-%d)
+cd /tmp
 
-# sauvegarde de /docpartgae
-/bin/tar -cjf /tmp/home-$backupdate.tar.bz2 /media/docpartgae
+tar -czvf `date +%Y-%m-%d`_pons_sauvegarde.tar.gz
+
+rm /docpartgae
