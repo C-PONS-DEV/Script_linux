@@ -1,7 +1,3 @@
-cp media/docpartgae /tmp
-
-cd /tmp
-
-tar -czvf `date +%Y-%m-%d`_pons_sauvegarde.tar.gz
-
-rm /docpartgae
+cp -r /media/docpartgae /tmp
+tar -czvf /tmp/'date +%Y-%m-%d'_pons_sauvegarde.tar.gz /media/docpartgae
+rm -r /tmp/docpartgae
