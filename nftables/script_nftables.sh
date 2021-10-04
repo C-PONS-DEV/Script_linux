@@ -132,6 +132,7 @@ esac
 
 if [ $save = "v" ]
 	then 
+			echo "flush ruleset \n \n" > tmp/save$filtre.rules
 			nft list table $filtre > /tmp/save$filtre.rules
 			rm /etc/nftables.conf
 			cp /tmp/savefiltre.rules /etc/nftables.conf
