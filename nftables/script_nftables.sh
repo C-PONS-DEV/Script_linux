@@ -1,7 +1,7 @@
 #Automatisation des ajouts de règles nftable parce que j'en peux plus
 #Debian 11
 
-#by loris
+#by Loris
 
 #Questions
 
