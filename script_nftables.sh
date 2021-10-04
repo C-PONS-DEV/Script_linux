@@ -121,7 +121,7 @@ fi
 
 #Sauvegarde
 
-echo "P'tite save pour la fin ? (O/N)"
+echo "P'tite sauvegarde pour la fin ? (O/N)"
 read save
 case $save in
 
