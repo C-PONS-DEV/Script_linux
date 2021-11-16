@@ -4,8 +4,6 @@ echo "Executer le script depuis 'su -' sinon le reboot automatique de fin ne fon
 
 echo "Le hostname doit être plus court que le domaine, sinon kerberos marche pas"
 
-#by loris
-
 
 # Mise à jour du système et installation des paquets
 
